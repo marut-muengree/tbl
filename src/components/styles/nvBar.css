@@ -1,0 +1,56 @@
+.appBar {
+  border-bottom: 1px solid;
+  position: absolute;
+}
+.toolbar {
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+}
+.toolbarTitle {
+  padding-top: 0.2%;
+  padding-left: 2%;
+}
+.link {
+  display: inline-flex;
+  flex-direction: row;
+  padding-right: 2%;
+  text-align: end;
+  height: 45px;
+  align-items: center;
+  font-size: large;
+}
+.heroContent {
+  padding: 5;
+}
+.cardHeader {
+  background-color: rgb(66, 95, 95);
+}
+.cardPricing {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 2;
+}
+.footer {
+  border-top: 1;
+  margin-top: 8;
+  padding-top: 3;
+  padding-bottom: 3;
+}
+.test {
+  flex-grow: 1;
+  text-align: end;
+}
+.dada {
+  display: flex;
+  height: 100%;
+  text-align: end;
+}
+.font_size {
+  font-size: large;
+  text-align: center;
+}
+.size_icon {
+  width: 100px;
+  height: 50px;
+}

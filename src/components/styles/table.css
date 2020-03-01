@@ -1,0 +1,23 @@
+.padding {
+  margin: 3%;
+  margin-top: 4%;
+}
+.btn-set {
+  text-align: center;
+  margin-left: 3%;
+  margin-top: 1%;
+}
+.btn-center {
+  text-align: center;
+  padding-bottom: 3%;
+  /* background-color: blue; */
+}
+.MuiButton-label {
+  font-size: large;
+}
+.total-cost {
+  text-align: end;
+  padding-bottom: 3%;
+  margin-right: 4%;
+  font-size: x-large;
+}
