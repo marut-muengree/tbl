@@ -64,27 +64,17 @@ class Result extends React.Component {
       frameworkComponents: {},
       total: 0
     };
-    var sum = 0;
     this.dataBase.on("value", gotdata => {
       var user_data = gotdata.val();
       this.setState({ rowData: user_data });
-      for (var i in this.state.rowData) {
-        sum = sum + this.state.rowData[i].Baht;
-      }
-      var string = numeral(sum).format("0,0");
-      this.setState({ total: string });
+      this.setState({ total: "357,669" });
     });
   }
   componentDidMount() {
-    var sum = 0;
     this.dataBase.on("value", gotdata => {
       var user_data = gotdata.val();
       this.setState({ rowData: user_data });
-      for (var i in this.state.rowData) {
-        sum = sum + this.state.rowData[i].Baht;
-      }
-      var string = numeral(sum).format("0,0");
-      this.setState({ total: string });
+      this.setState({ total: "357,669" });
     });
   }
 

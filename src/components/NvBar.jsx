@@ -19,6 +19,17 @@ class NvBar extends React.Component {
       // state: this.props.state
     });
   }
+  onclickhome() {
+    this.props.props.history.push({
+      pathname: "/Home"
+      // state: this.props.state
+    });
+  }
+  onclickw() {
+    this.props.props.history.push({
+      pathname: "/Worklist"
+    });
+  }
   render() {
     return (
       <React.Fragment>
@@ -42,10 +53,11 @@ class NvBar extends React.Component {
             </Typography>
             <nav className="test">
               <Link
+                // to="/Home"
                 variant="button"
                 color="textPrimary"
-                href="/Home"
                 className="link"
+                onClick={this.onclickhome.bind(this)}
               >
                 <HomeIcon fontSize="default"></HomeIcon>
                 <div className="font_size">หน้าหลัก</div>
@@ -54,8 +66,8 @@ class NvBar extends React.Component {
               <Link
                 variant="button"
                 color="textPrimary"
-                href="/Worklist"
                 className="link"
+                onClick={this.onclickw.bind(this)}
               >
                 <LibraryBooksIcon fontSize="default"></LibraryBooksIcon>
                 <div className="font_size">ตารางการรับงาน</div>

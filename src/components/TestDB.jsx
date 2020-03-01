@@ -12,9 +12,11 @@ import TableComp from "./TableComp";
 class TestDB extends React.Component {
   constructor(props) {
     super(props);
+    console.log(props);
     if (firebase.apps.length === 0) {
       firebase.initializeApp(firebaseConfig);
     }
+    this.state = { rowData: [], total: "" };
     this.state1 = {
       columnDefsPlan: [
         {
@@ -113,6 +115,7 @@ class TestDB extends React.Component {
       text: "กรุณาเลือกไฟล์ข้อมูลคนขับ(Out source)"
     };
   }
+
   onClickVisulize() {
     this.dataBase = firebase.database().ref("/users/user2/work_list");
     this.dataBase.remove();

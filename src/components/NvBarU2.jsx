@@ -18,6 +18,16 @@ class NvBarU2 extends React.Component {
       pathname: "/"
     });
   }
+  onclick2() {
+    this.props.props.history.push({
+      pathname: "/HomeU2"
+    });
+  }
+  onclick3() {
+    this.props.props.history.push({
+      pathname: "/WorkListU2"
+    });
+  }
   render() {
     return (
       <React.Fragment>
@@ -43,7 +53,7 @@ class NvBarU2 extends React.Component {
               <Link
                 variant="button"
                 color="textPrimary"
-                href="/HomeU2"
+                onClick={this.onclick2.bind(this)}
                 className="link"
               >
                 <HomeIcon fontSize="default"></HomeIcon>
@@ -53,7 +63,7 @@ class NvBarU2 extends React.Component {
               <Link
                 variant="button"
                 color="textPrimary"
-                href="/WorkListU2"
+                onClick={this.onclick3.bind(this)}
                 className="link"
               >
                 <LibraryBooksIcon fontSize="default"></LibraryBooksIcon>
